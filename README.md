@@ -11,6 +11,14 @@ neutral), ajuste de temperatura y una simulación de Monte Carlo con
 penaltis para resolver cada cruce eliminatorio.
 
 ## Resultado
+### Detalle numérico de cada cruce
+
+| Partido | Prob. Local | Prob. Empate | Prob. Visitante | Ganador predicho | Confianza (Monte Carlo) | Marcador probable |
+|---|---|---|---|---|---|---|
+| Francia 🆚 Marruecos | 58.2% | 21.6% | 20.2% | **Francia** | 74.8% | 2-0 |
+| Inglaterra 🆚 Noruega | 58.7% | 25.0% | 16.3% | **Inglaterra** | 78.0% | 1-0 |
+| Bélgica 🆚 España | 27.3% | 24.4% | 48.3% | **España** | 63.9% | 0-1 |
+| Suiza 🆚 Argentina | 19.0% | 24.9% | 56.1% | **Argentina** | 74.6% | 0-1 |
 
 El resultado final es una imagen: **`output/clasificados_octavos.png`**,
 con los 8 equipos que clasifican a Cuartos de Final (2 ya decididos en la
@@ -113,18 +121,6 @@ output/predicciones_octavos.csv
 
 No se necesita ninguna llave de API ni conexión a internet: todo corre en
 local a partir de estos CSV.
-
-
-## Resultado
-
-### Detalle numérico de cada cruce
-
-| Partido | Prob. Local | Prob. Empate | Prob. Visitante | Ganador predicho | Confianza (Monte Carlo) | Marcador probable |
-|---|---|---|---|---|---|---|
-| Francia 🆚 Marruecos | 58.2% | 21.6% | 20.2% | **Francia** | 74.8% | 2-0 |
-| Inglaterra 🆚 Noruega | 58.7% | 25.0% | 16.3% | **Inglaterra** | 78.0% | 1-0 |
-| Bélgica 🆚 España | 27.3% | 24.4% | 48.3% | **España** | 63.9% | 0-1 |
-| Suiza 🆚 Argentina | 19.0% | 24.9% | 56.1% | **Argentina** | 74.6% | 0-1 |
 
 *(Fuente: `output/predicciones_cuartos.csv`, corte de datos 2026-07-07. "Prob. Local/Empate/Visitante" son las probabilidades 1X2 del clasificador calibrado; "Confianza" es el % del ganador predicho tras la simulación de Monte Carlo con penaltis.)*
 
